@@ -1,0 +1,27 @@
+{
+  "sourceRepo": "magisk317/smscode-rules",
+  "branch": "main",
+  "generatedAt": "2026-05-10T09:34:26.985329+00:00",
+  "files": [
+    {
+      "path": "rules/cn.bank.hsbc-china.json",
+      "id": "cn.bank.hsbc-china",
+      "name": "汇丰银行中国",
+      "locale": "zh-CN",
+      "updatedAt": "2026-05-01T00:00:00+08:00",
+      "ruleCount": 1,
+      "sha256": "118e540100718ae4b1429dd44974b91cec0dd0e122d34e21d233714f283f8168",
+      "size": 790
+    },
+    {
+      "path": "rules/cn.carrier.china-mobile-cloud-drive.json",
+      "id": "cn.carrier.china-mobile-cloud-drive",
+      "name": "中国移动云盘",
+      "locale": "zh-CN",
+      "updatedAt": "2026-05-01T00:00:00+08:00",
+      "ruleCount": 2,
+      "sha256": "3c8c288c7ee2ae7438ef82b3ac64e17f1953b08081c91ab04c4308b98758585a",
+      "size": 1948
+    }
+  ]
+}
