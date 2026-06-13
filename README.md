@@ -9,14 +9,19 @@
 
 ## 仓库结构
 
-- `rules/`：规则文件
+- `rules/`：按国家 / 领域分类的规则文件
 - `schemas/`：规则 Schema
 - `tools/`：校验与索引生成脚本
 - `_meta/rules-index.json`：生成后的规则索引
 
 ## 规则文件格式
 
-每个规则文件描述一个供应商/产品的规则集，推荐一家公司或一个产品一份文件。
+每个规则文件描述一个规则集，推荐按**国家 / 领域 / 场景族**归并，而不是按“单条短信模板”拆文件。
+
+推荐实践：
+- 同一品牌 / 产品的多条模板放在同一个规则文件里
+- 同一类场景（例如统一门户登录、银行登录、运营商活动）可以按领域目录分组
+- 只有当规则所有权、优先级策略或维护边界明显不同，才拆成新文件
 
 当前规则模型兼顾：
 - **现有应用兼容字段**：`company`、`codeKeyword`、`codeRegex`
@@ -75,6 +80,12 @@
 
 ## 工具
 
+先安装脚本依赖：
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 校验全部规则：
 
 ```bash
@@ -87,11 +98,32 @@ python3 tools/validate_rules.py
 python3 tools/build_index.py
 ```
 
+校验索引是否已同步：
+
+```bash
+python3 tools/build_index.py --check
+```
+
+`build_index.py` 在规则内容未变化时不会改写 `_meta/rules-index.json`，方便本地重复执行和 CI 校验。
+
+## 贡献建议
+
+- 规则文件建议放在 `rules/<country>/<domain>/<rule-set-id>.json`
+- 规则文件名使用 `<rule-set-id>.json`，并与文件内顶层 `id` 保持一致
+- 优先为“同一机构 / 同一产品 / 同一场景族”归并一份规则文件，避免碎片化拆分
+- 不要为单条短信模板单独创建文件；优先往现有规则集里补规则
+- 优先写高特异性规则，再用较低 `priority` 补兜底规则
+- 样例短信请使用可公开的脱敏文本，不要提交真实用户数据
+- 提交前至少运行一次校验与索引检查
+
+更细的提交约束见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 初版规则
 
 当前已包含：
 - 中国移动云盘活动领奖验证码
 - 汇丰银行中国验证码
+- 统一门户登录验证码
 
 后续建议继续补充：
 - 银行
@@ -99,4 +131,3 @@ python3 tools/build_index.py
 - 电商
 - 出行 / 生活服务
 - 海外短信模板
-

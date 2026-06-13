@@ -1,27 +1,37 @@
 {
   "sourceRepo": "magisk317/smscode-rules",
   "branch": "main",
-  "generatedAt": "2026-05-10T09:34:26.985329+00:00",
+  "generatedAt": "2026-06-13T03:58:03+00:00",
   "files": [
     {
-      "path": "rules/cn.bank.hsbc-china.json",
+      "path": "rules/cn/bank/cn.bank.hsbc-china.json",
       "id": "cn.bank.hsbc-china",
       "name": "汇丰银行中国",
       "locale": "zh-CN",
       "updatedAt": "2026-05-01T00:00:00+08:00",
       "ruleCount": 1,
-      "sha256": "118e540100718ae4b1429dd44974b91cec0dd0e122d34e21d233714f283f8168",
-      "size": 790
+      "sha256": "d441ed59811aa3a7e5f717159836d8e3f3df002c33587233610976b36ef7de59",
+      "size": 789
     },
     {
-      "path": "rules/cn.carrier.china-mobile-cloud-drive.json",
+      "path": "rules/cn/carrier/cn.carrier.china-mobile-cloud-drive.json",
       "id": "cn.carrier.china-mobile-cloud-drive",
       "name": "中国移动云盘",
       "locale": "zh-CN",
       "updatedAt": "2026-05-01T00:00:00+08:00",
       "ruleCount": 2,
-      "sha256": "3c8c288c7ee2ae7438ef82b3ac64e17f1953b08081c91ab04c4308b98758585a",
-      "size": 1948
+      "sha256": "e764a4de3371845560f38e8746371298118e8fec3aacc7eb806e6206cff63434",
+      "size": 1947
+    },
+    {
+      "path": "rules/cn/portal/cn.portal.unified-login.json",
+      "id": "cn.portal.unified-login",
+      "name": "统一门户登录",
+      "locale": "zh-CN",
+      "updatedAt": "2026-06-13T00:00:00+08:00",
+      "ruleCount": 1,
+      "sha256": "f32e0a4491d041516a003e2fa67a924fb586ee9a4f88e87d333e2b5cfc3607b0",
+      "size": 856
     }
   ]
 }
