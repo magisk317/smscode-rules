@@ -1,7 +1,7 @@
 {
   "sourceRepo": "magisk317/smscode-rules",
   "branch": "main",
-  "generatedAt": "2026-06-13T03:58:03+00:00",
+  "generatedAt": "2026-07-06T11:56:02+00:00",
   "files": [
     {
       "path": "rules/cn/bank/cn.bank.hsbc-china.json",
@@ -32,6 +32,16 @@
       "ruleCount": 1,
       "sha256": "f32e0a4491d041516a003e2fa67a924fb586ee9a4f88e87d333e2b5cfc3607b0",
       "size": 856
+    },
+    {
+      "path": "rules/global/app/global.app.email-voice.json",
+      "id": "global.app.email-voice",
+      "name": "Email and Voice app notifications",
+      "locale": "und",
+      "updatedAt": "2026-07-06T00:00:00+08:00",
+      "ruleCount": 4,
+      "sha256": "ef9bdae11c512903967a6fd7b8b244bd290149ac3a5da68171747ea80f58750f",
+      "size": 2912
     }
   ]
 }
