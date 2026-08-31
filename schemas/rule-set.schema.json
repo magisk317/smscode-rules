@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/magisk317/smscode-rules/schemas/rule-set.schema.json",
+  "$id": "https://github.com/magisk3171/smscode-rules/schemas/rule-set.schema.json",
   "title": "SmsCode Rule Set",
   "$defs": {
     "nonEmptyString": {

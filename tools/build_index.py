@@ -50,7 +50,7 @@ def build_index(generated_at: str) -> dict:
         )
 
     return {
-        "sourceRepo": "magisk317/smscode-rules",
+        "sourceRepo": "magisk3171/smscode-rules",
         "branch": "main",
         "generatedAt": generated_at,
         "files": files,
