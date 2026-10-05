@@ -105,6 +105,13 @@
             "type": "integer",
             "minimum": 0
           },
+          "rejectedSuffixes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "uniqueItems": true
+          },
           "notes": {
             "$ref": "#/$defs/nonEmptyString"
           },
