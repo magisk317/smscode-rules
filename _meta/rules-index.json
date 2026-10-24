@@ -1,7 +1,7 @@
 {
   "sourceRepo": "magisk3171/smscode-rules",
   "branch": "main",
-  "generatedAt": "2026-10-05T16:58:45+00:00",
+  "generatedAt": "2026-10-22T02:53:54+00:00",
   "files": [
     {
       "path": "rules/ar/general/ar.general.default.json",
@@ -22,6 +22,16 @@
       "ruleCount": 1,
       "sha256": "d441ed59811aa3a7e5f717159836d8e3f3df002c33587233610976b36ef7de59",
       "size": 789
+    },
+    {
+      "path": "rules/cn/bank/cn.bank.icbc.json",
+      "id": "cn.bank.icbc",
+      "name": "中国工商银行",
+      "locale": "zh-CN",
+      "updatedAt": "2026-10-22T10:55:00+08:00",
+      "ruleCount": 1,
+      "sha256": "13cf2d1db63d61154feb41dceb12e9aa30394b782dfc458260f23ddce6524e64",
+      "size": 774
     },
     {
       "path": "rules/cn/carrier/cn.carrier.china-mobile-cloud-drive.json",
